@@ -28,5 +28,5 @@ int diffdays(date start, date end)
         total_diffMonths = (end.month - start.month) * (365.25f / 12);
         total_diffYears = (end.year - start.year) * 365.25f;
     }
-    return round(total_diffMonths + total_diffYears) - abs(end.day - start.day); 
+    return round(total_diffMonths + total_diffYears) - abs(start.day - end.day); 
 }
